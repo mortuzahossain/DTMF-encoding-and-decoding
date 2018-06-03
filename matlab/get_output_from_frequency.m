@@ -1,13 +1,12 @@
 function [ dilled_digit ] = get_output_from_frequency( f1,f2 )
 
 % Get f1 and f2 as input and return the digit corrosponding to the frequencys
-
-    if f1 >= 941 && f2 <= 1336
+    if f1 >= 941 && f2 <= 1209
+        dilled_digit = '*';
+    elseif f1 >= 941 && f2 <= 1336
         dilled_digit = '0';
     elseif f1 >= 941 && f2 <= 1477
         dilled_digit = '#';
-    elseif f1 >= 941 && f2 <= 1209
-        dilled_digit = '*';
     elseif f1 >= 842 && f2 <= 1209
         dilled_digit = '7';
     elseif f1 >= 842 && f2 <= 1336
